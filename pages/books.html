@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookstore</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="../icons/book.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/vendors/normalize.css" />
+    <link rel="stylesheet" href="../css/vendors/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../css/vendors/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/vendors/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <!-- navbar start -->
+    <nav>
+      <div class="container nav">
+        <div class="nav-logo">
+          <a href="../index.html">
+            <img src="../images/logobookstore.svg" alt="logo png" />
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="#">الأقسام</a>
+          <a href="books.html">الكتب</a>
+          <a href="authors.html">المؤلفين</a>
+          <a href="quotes.html">الاقتباسات</a>
+          <a href="add.html">إضافة كتاب</a>
+          <!-- <a href="#"><i class="fas fa-search search-icon"></i></a> -->
+        </div>
+
+        <div class="nav-log">
+          <a href="#"
+            >دخول
+            <i class="fas fa-user-alt"></i>
+          </a>
+          <i class="fas fa-bars nav-bars"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- All books section start -->
+    <div class="books-sec">
+      <div class="container">
+        <form action="" class="search-pages-box">
+          <input
+            id="bookFilter"
+            type="text"
+            placeholder="بحث عن كتاب أو قسم أو مؤلف أو سلسلة كتب"
+            autocomplete="off"
+          />
+        </form>
+        <div class="books" id="pg-books"></div>
+      </div>
+      <div class="btn" id="showMore">
+        <a href="#">عرض المزيد</a>
+      </div>
+    </div>
+    <!-- All books section end -->
+
+    <!-- footer start -->
+    <footer>
+      <div class="container footer">
+        <div class="footer-links">
+          <h5>روابط تهمك</h5>
+          <div>
+            <a href="#">حقوق النشر</a>
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط وأحكام الاستخدام</a>
+            <a href="#">الإبلاغ عن مشكلة</a>
+            <a href="#">أتصل بنا</a>
+          </div>
+        </div>
+        <div class="footer-tags">
+          <h5>أهم التصنيفات</h5>
+          <div>
+            <span>كتب اسلامية</span>
+            <span>كتب تاريخ</span>
+            <span>سير وتراجم</span>
+            <span>علوم القرآن</span>
+            <span>اللغة العربية</span>
+            <span>الفلسفة والمنطق</span>
+            <span>روايات</span>
+            <span>علم نفس</span>
+            <span>أدب انجليزي</span>
+            <span>تنمية بشرية</span>
+          </div>
+        </div>
+        <div class="footer-social">
+          <h5>تواصل معنا</h5>
+          <div class="links">
+            <a href="#">Youtube</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">RSS</a>
+            <a href="#">support@name.com</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="../js/vendors/owl.carousel.js"></script>
+    <script src="../js/books.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
