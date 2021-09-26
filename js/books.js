@@ -103,7 +103,7 @@ let booksCover = [
 "../images/bookcover/B (24).jpg",
 "../images/bookcover/B (25).jpg",
 ];
-let booksTitles = [
+let booksTitles2 = [
   "ابن آوى",
   "الدم والحليب",
   "أطلس العالم",
@@ -206,7 +206,7 @@ let booksTitles = [
   "ذكرى شكسبير",
   "تذكار الصبا"
 ]
-let booksAuthors = [
+let booksAuthors2 = [
   "حلمي مهران",
   "محمد الجيزاوي",
   "غير معروف",
@@ -326,7 +326,7 @@ for (let i = 0 ; i < booksCover.length ; i++){
                     </div>
                     <div class="book-author">
                       <i class="fas fa-user-circle"></i>
-                      ${booksAuthors[i]}
+                      ${booksAuthors2[i]}
                     </div>
                     <div class="book-tag">
                       <i class="fas fa-tag"></i>
@@ -341,7 +341,7 @@ for (let i = 0 ; i < booksCover.length ; i++){
                   </div>
                 </div>
                 <h3 class="book-title">
-                  <a href="#" title="${booksTitles[i]}">${booksTitles[i]}</a>
+                  <a href="#" title="${booksTitles2[i]}">${booksTitles2[i]}</a>
                 </h3>
               </div>
     `

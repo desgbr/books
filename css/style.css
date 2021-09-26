@@ -134,6 +134,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 99999;
 }
 
 .nav {
@@ -218,7 +219,16 @@ nav {
 .nav-logo img{
   height: 30px;
 }
-
+@media(max-width:425px){
+ .container{
+    width: 100%;
+  }
+  .nav-links{
+    width: 100%;
+    background-color:rgb(80, 162, 161,0.95) ;
+    font-size: 24px;
+  }
+}
 /* 
 =============== navbar end 
 */
@@ -339,6 +349,7 @@ nav {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     align-items: center;
     padding: 100px 0;
+    height: 50vh;
   }
   .header-text {
     padding: 20px;
@@ -505,6 +516,9 @@ nav {
   height: 300px;
 }
 @media(max-width:768px){
+  .books-sec .container{
+    width: 90%;
+  }
   .books{
     justify-content: center;
   }
@@ -703,7 +717,17 @@ nav {
   transform: scale(1.1);
   opacity: 0.9;
 }
+@media(max-width:768px){
+  .blog-posts .right,
+.blog-posts .left{
+  width: 90%;
+}
+.blog-posts .left > div{
+  width: 100%;
+  margin: 15px auto;
 
+}
+}
 /* 
 =============== blog posts start
 */
@@ -769,6 +793,7 @@ footer{
 @media(max-width:768px) {
   .footer{
     grid-template-columns: repeat(2,1fr);
+    padding: 50px 20px;
   }
   .footer-tags{
     display: none;
@@ -779,6 +804,9 @@ footer{
 @media(max-width:425px) {
   .footer{
     grid-template-columns:1fr;
+  }
+  .footer > div:not(:last-of-type){
+    border-left:none;
   }
   .footer-tags{
     display: none;
@@ -847,10 +875,10 @@ footer{
       authors page
 ========================
 */
-.pg-authors{
+#pg-authors{
   display: flex;
   flex-flow: row wrap;
-  justify-content: start;
+  justify-content: space-around;
   gap: 25px 15px;
 }
 .author-block{
@@ -905,7 +933,31 @@ footer{
 .author-block i{
   color: var(--pcolor);
 }
-
+@media(max-width:1280px){
+  .author-block{
+    width: 45%;
+  }
+  .book-text{
+    width: auto;
+  }
+}
+@media(max-width:992px){
+  .author-block{
+    width: 80%;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media(max-width:500px){
+  .book-text{
+    width: 90%;
+  }
+  .author-block{
+    width: 100%;
+    justify-content: center;
+    gap: 20px;
+  }
+}
 /* 
 ========================
       quotes page
@@ -937,4 +989,27 @@ footer{
 {
   transform: scale(.7);
   opacity: 0.04;
+}
+@media(max-width:1170px){
+  .qoutes-sec{
+    width: 60%;
+  }
+  .page-wrapper .container{
+    width: 90%;
+  }
+  .page-wrapper .authors-list, .page-wrapper .sections-list{
+    width: 15%;
+  }
+}
+
+@media(max-width:992px){
+  .page-wrapper{
+    background-color: #F4F4F4;
+  }
+  .qoutes-sec{
+    width: 95%;
+  }
+  .page-wrapper .authors-list, .page-wrapper .sections-list{
+    display: none;
+  }
 }

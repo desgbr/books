@@ -1,12 +1,11 @@
 // nav list responsive mode open
-let bars = document.querySelector(".nav-bars");
-let navLinks = document.querySelector(".nav-links");
+// let bars = document.querySelector(".nav-bars");
+// let navLinks = document.querySelector(".nav-links");
 
-bars.addEventListener("click", function(){
-  bars.classList.toggle("fa-times");
-  navLinks.classList.toggle("show");
-},)
-
+// bars.addEventListener("click", function(){
+//   bars.classList.toggle("fa-times");
+//   navLinks.classList.toggle("show");
+// },)
 
 // nav scroll fixed
 
@@ -114,7 +113,7 @@ $('.owl-authors').owlCarousel({
       0:{
           items:1
       },
-      325:{
+      425:{
           items:2
       },
       768:{
@@ -137,7 +136,7 @@ $('.owl-carousel').owlCarousel({
       0:{
           items:1
       },
-      425:{
+      375:{
           items:2
       },
       768:{
@@ -151,10 +150,9 @@ $('.owl-carousel').owlCarousel({
 
 
 // //////////////////////////////////
-
 // books pages 
 let booksLatestAdd = document.querySelector("#booksIndexPage");
-let booksCover = [
+let booksCovers = [
   "../images/bookcover/A (1).jpg",
 "../images/bookcover/A (2).jpg",
 "../images/bookcover/A (3).jpg",
@@ -208,12 +206,12 @@ let booksAuthors = [
   "J.R.R Tolkien",
   "مارك توين"
 ]
-for (let i = 0 ; i < booksCover.length ; i++){
+for (let i = 0 ; i < booksCovers.length ; i++){
 
   booksLatestAdd.innerHTML += `
     <div class="book">
                 <div class="book-cover">
-                  <img src="${booksCover[i]}", alt="book cover" />
+                  <img src="${booksCovers[i]}", alt="book cover" />
     
                   <div class="book-text">
                     <div class="book-rate">
